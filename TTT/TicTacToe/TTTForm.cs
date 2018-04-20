@@ -22,6 +22,9 @@ namespace TicTacToe
         const string EMPTY = "";
 
         const int SIZE = 5;
+        const int ROWS = 5;
+        const int COLS = 5;
+        int[,] spaces = new int[ROWS, COLS];
 
         // constants for the 2 diagonals
         const int TOP_LEFT_TO_BOTTOM_RIGHT = 1;
