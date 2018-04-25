@@ -69,8 +69,10 @@ namespace TicTacToe
 //                square = GetSquare(row, col);
                 if (symbol == EMPTY || board[row,col] != symbol)
                     return false;
+
             }
-            return true;
+
+        return true;
         }
 
         //* TODO:  finish all of these that return true
@@ -107,7 +109,14 @@ namespace TicTacToe
 
         private bool IsDiagonal1Winner()
         {
+            string symbol = board[0, 0];
+            for (int row = 1, col = 1; row < SIZE; row++, col++)
+            {
+                if (symbol == EMPTY || board[row, col] != symbol)
+                    return false;
+            }
             return true;
+
         }
 
         private bool IsDiagonal2Winner()
@@ -126,13 +135,12 @@ namespace TicTacToe
 
         private bool IsAnyDiagonalWinner()
         {
-            string symbol = board[0, 0];
-            for (int row = 1, col = 1; row < SIZE; row++, col++)
+            if (IsDiagonal1Winner() == true || IsDiagonal2Winner() == true)
             {
-                if (symbol == EMPTY || board[row, col] != symbol)
-                    return false;
+                return true;
             }
-            return true;
+            else
+            return false;
         }
 
         private bool IsFull()
@@ -158,8 +166,10 @@ namespace TicTacToe
             {
                 if (IsRowWinner(row))
                 {
+
                     whichDimension = ROW;
                     whichOne = row;
+                    MessageBox.Show("Winning Row" + whichDimension);
                     return true;
                 }
             }
