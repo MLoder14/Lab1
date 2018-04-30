@@ -27,12 +27,12 @@ namespace Seating_Chart
 
             // TODO:  Create an array with the seat prices.
             Decimal [,] prices = 
-            { {450m, 450m, 450m, 450m},
-                                  {425m, 425m, 425m, 425m},
-                                  {400m, 400m, 400m, 400m},
-                                  {375m, 375m, 375m, 375m},
-                                  {375m, 375m, 375m, 375m},
-                                  {350m, 350m, 350m, 350m}
+            {   {450m, 450m, 450m, 450m},
+                {425m, 425m, 425m, 425m},
+                {400m, 400m, 400m, 400m},
+                {375m, 375m, 375m, 375m},
+                {375m, 375m, 375m, 375m},
+                {350m, 350m, 350m, 350m}
             };
              
 

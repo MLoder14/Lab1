@@ -96,8 +96,9 @@ namespace InvoiceTotal
                 if (total != 0)
                 {
                     message += total.ToString("c") + "\n";
+                    MessageBox.Show(message, "Order Totals - array");
                 }
-                MessageBox.Show(message, "Order Totals - array");
+
             }
 
             this.Close();

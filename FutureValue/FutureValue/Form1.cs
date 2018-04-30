@@ -48,12 +48,11 @@ namespace FutureValue
                     txtMonthlyInvestment.Focus();
 
                     // TODO: Add the calculation to the rectangular array here
-                    FutureValueArray[counter, 0] = monthlyInvestment.ToString("c2");
-                    FutureValueArray[counter, 1] = interestRateYearly.ToString();
-                    FutureValueArray[counter, 2] = years.ToString();
-                    FutureValueArray[counter, 3] = futureValue.ToString("c2");
-                    counter++;
-
+                        FutureValueArray[counter, 0] = monthlyInvestment.ToString("c2");
+                        FutureValueArray[counter, 1] = interestRateYearly.ToString();
+                        FutureValueArray[counter, 2] = years.ToString();
+                        FutureValueArray[counter, 3] = futureValue.ToString("c2");
+                        counter++;
                 }
             }
             catch (Exception ex)
